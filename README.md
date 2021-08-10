@@ -9,18 +9,62 @@ This is for begginers coder and some meture coder of python . This help your for
 - Open Any application or file by it's Location
 - Install Many Python Module at One Time By Only it's Name
 - Download File or Video Or Anything from web(by url)
-- Encrypting Files and texts.\n"
-- Know How old You are.\n"+
+- Encrypting Files and texts
+- Know How old You are
 ## Compatibility
-Check your Python version by typing in
+Check your Python version by typing this command
 ```shell script
-$ python --version
+python --version
 ```
-If you get the following
+If you get the following or gr
 ```shell script
 Python 3.8.3
 ```
-or any version greater than or equal to 3.4, this script has been tested and confirmed to be supported. For obsolete versions of Python (eg 2.7), use discretion while executing the script as it has not been tested there.
+greater than or eqaul-to version 3 is supported.
+
 ## Installations
+There are some methods for using Real_Python.
+Chose what you want.
+#### For Termux
+Commands for Termux:
+```shell script
+pkg install git -y 
+pkg install python -y 
+git clone https://github.com/code-with-Xcoder/Real_Python.git
+cd Real_Python
+python Real_Python.py
+```
 
+#### For Debian-based 
+Commands for Debian-based terminal.
+```shell script
+sudo apt install git
+git clone https://github.com/code-with-Xcoder/Real_Python.git
+cd Real_Python
+python Real_Python.py
+```
 
+#### For MacOS:
+Commands for MacOS terminal.
+```shell script
+brew install git
+brew install python3
+sudo easy_install pip
+sudo pip install --upgrade pip
+git clone https://github.com/code-with-Xcoder/Real_Python.git
+cd Real_Python
+python Real_Python.py
+```
+#### For iSH
+
+Commands for iSH.
+```shell script
+apk add git
+apk add python3
+apk add py3-pip
+apk add ruby
+gem install toilet
+git clone https://github.com/code-with-Xcoder/Real_Python.git
+cd Real_Python
+python Real_Python.py
+```
