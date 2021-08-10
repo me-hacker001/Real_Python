@@ -74,10 +74,10 @@ You can also download Real_Python as zip and manually run Real_Python.py on suit
 click here for download - [Real_Python](https://github.com/code-with-Xcoder/Real_Python/archive/refs/heads/master.zip)
 
 # Contact us
-Primary Email: xcoder.info@gmail.com
-Secondary Email: info.realpython@gmail.com
-Website for contacting us: https://form.craftbook.xyz
-YouTube: [In_Future_World](https://www.youtube.com/channel/UCh5_VB1guUcc0mWAOc7etrA) and [Craft Book](https://www.youtube.com/channel/UCWjay1fq6WaL_svEhQ68XMg)
-Instagram: [In_Future_World](https://www.instagram.com/in_future_world/)
-Twitter: [In_Future_World](https://twitter.com/In_future_world)
-GitHub: [code-with-Xcoder](https://github.com/code-with-Xcoder)
+Primary Email: xcoder.info@gmail.com <br />
+Secondary Email: info.realpython@gmail.com <br />
+Website for contacting us: https://form.craftbook.xyz <br />
+YouTube: [In_Future_World](https://www.youtube.com/channel/UCh5_VB1guUcc0mWAOc7etrA) and [Craft Book](https://www.youtube.com/channel/UCWjay1fq6WaL_svEhQ68XMg) <br />
+Instagram: [In_Future_World](https://www.instagram.com/in_future_world/) <br />
+Twitter: [In_Future_World](https://twitter.com/In_future_world) <br />
+GitHub: [code-with-Xcoder](https://github.com/code-with-Xcoder) <br />
