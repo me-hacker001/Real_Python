@@ -22,7 +22,7 @@ Python 3.8.3
 ```
 greater than or eqaul-to version 3 is supported.
 # No Module_Tension
-Real_Python automatically install module or update them, when you run. 
+Real_Python automatically install module or update them, when you run it. 
 ## Installations
 There are some methods for using Real_Python.
 Chose what you want.
@@ -69,6 +69,15 @@ git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
 python Real_Python.py
 ```
-# Or download it as zip and run manualy Real_Python.py
+## **_Or download it as zip and run manually Real_Python.py_**
+You can also download Real_Python as zip and manually run Real_Python.py on suitable software <br />
+click here for download - [Real_Python](https://github.com/code-with-Xcoder/Real_Python/archive/refs/heads/master.zip)
 
 # Contact us
+Primary Email: xcoder.info@gmail.com
+Secondary Email: info.realpython@gmail.com
+Website for contacting us: https://form.craftbook.xyz
+YouTube: [In_Future_World](https://www.youtube.com/channel/UCh5_VB1guUcc0mWAOc7etrA) and [Craft Book](https://www.youtube.com/channel/UCWjay1fq6WaL_svEhQ68XMg)
+Instagram: [In_Future_World](https://www.instagram.com/in_future_world/)
+Twitter: [In_Future_World](https://twitter.com/In_future_world)
+GitHub: [code-with-Xcoder](https://github.com/code-with-Xcoder)
