@@ -1,5 +1,5 @@
 # Real_Python
-This is for begginers coder and some meture coder of python . This help your for simple coding by many types of example of Python. Like Python Calculator, upto 10 games, upto 20 types of Virus, Bomber(SMS,CALL,MAIL),Encryption-Decryption, Create_QR code, install anything by link, know your exact time from birth to this and many more....... 
+This is for begginers coder and some meture coder of python . This help your for simple coding by many types of example of Python. Like Python modern Calculator, upto 10 games, upto 20 types of Virus, Bomber(SMS,CALL,MAIL),Encryption-Decryption, Create_QR code, install anything by link, know your exact time from birth to this and many more....... 
 # List of Basic Python-Example
 - Calculator
 - Funny And Dangerous .bat and .vbs Virus
@@ -11,6 +11,23 @@ This is for begginers coder and some meture coder of python . This help your for
 - Download File or Video Or Anything from web(by url)
 - Encrypting Files and texts
 - Know How old You are
+
+# Features 
+- All code are writen in 100% pure python
+- All code are writen in one file(only game code are in diffrent file)
+- Modern calculator code sample
+- Prank by bombing of unlimited sms, call, mail to anyone
+- Play 20+ types of modern python game
+- create 20+ types of funny and dangerous .bat and .vbs virus by just choosing them
+- Send secret text message or secret file by Encrypt-decrypt 
+- Know you exact deference between birth and real-time 
+- Create your known Qr-Code(for link,text etc....)
+- Download any thing from web(by url)
+- Install any python module by just typing it's name
+- open any type of application by just its file location 
+
+
+
 ## Compatibility
 Check your Python version by typing this command
 ```shell script
