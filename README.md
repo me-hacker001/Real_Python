@@ -21,11 +21,12 @@ If you get the following or gr
 Python 3.8.3
 ```
 greater than or eqaul-to version 3 is supported.
-
+# No Module_Tension
+Real_Python automatically install module or update them, when you run. 
 ## Installations
 There are some methods for using Real_Python.
 Chose what you want.
-#### For Termux
+#### For Termux:
 Commands for Termux:
 ```shell script
 pkg install git -y 
@@ -35,7 +36,7 @@ cd Real_Python
 python Real_Python.py
 ```
 
-#### For Debian-based 
+#### For Debian-based:
 Commands for Debian-based terminal.
 ```shell script
 sudo apt install git
@@ -55,7 +56,7 @@ git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
 python Real_Python.py
 ```
-#### For iSH
+#### For iSH:
 
 Commands for iSH.
 ```shell script
@@ -68,3 +69,6 @@ git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
 python Real_Python.py
 ```
+# Or download it as zip and run manualy Real_Python.py
+
+# Contact us
