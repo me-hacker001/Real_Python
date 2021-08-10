@@ -12,7 +12,7 @@ This is for begginers coder and some meture coder of python . This help your for
 - Encrypting Files and texts
 - Know How old You are
 
-# Features 
+# What it do
 - All code are writen in 100% pure python
 - All code are writen in one file(only game code are in diffrent file)
 - Modern calculator code sample
@@ -25,8 +25,6 @@ This is for begginers coder and some meture coder of python . This help your for
 - Download any thing from web(by url)
 - Install any python module by just typing it's name
 - open any type of application by just its file location 
-
-
 
 ## Compatibility
 Check your Python version by typing this command
