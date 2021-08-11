@@ -54,7 +54,8 @@ Chose what you want.
 Commands for Termux:
 ```shell script
 pkg install git -y 
-pkg install python -y 
+pkg install python -y
+pkg install python-tkinter
 git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
 python Real_Python.py
