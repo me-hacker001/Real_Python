@@ -53,12 +53,11 @@ def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
     test_list = ["pip", "PySimpleGUI", "argparse", "requests", "colorama", "pyqrcode", "pygame", "wget", "cryptography",
-                 "turtle", "cffi"]
+                 "turtle", "cffi","qrcode"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
         res = " ".join(test_list)
-
         module_size = 0
         print("Installed: ", test_list.pop(module_size))
         module_size = module_size + 1
@@ -84,6 +83,7 @@ try:
     from cffi.setuptools_ext import execfile
     import turtle
     from turtle import *
+    import qrcode
 
     print("Module Import Successful")
     time.sleep(1)
@@ -188,7 +188,7 @@ def real_python():
         path2 = "Your_data/Your_Qr_Code/"
         path3 = "Your_data/Your_Downloaded_Files/"
         path4 = "Your_data/Your_Encryption_key_Files/"
-        path5 = "Version/"
+
         if not os.path.exists(path):
             os.makedirs(path)
         if not os.path.exists(path1):
@@ -199,8 +199,7 @@ def real_python():
             os.makedirs(path3)
         if not os.path.exists(path4):
             os.makedirs(path4)
-        if not os.path.exists(path5):
-            os.makedirs(path5)
+
 
     def web():
         webbrowser.open_new('http://form.craftbook.xyz')
@@ -1990,14 +1989,25 @@ def real_python():
         def create_qr():
             if (check_internet()) == True:
                 user_input = input("Enter Url or Secret Text: ")
-                QRCode = pyqrcode.create(user_input)
-                path2 = "Your_data/Your_Qr_Code/"
+                user_input_name = input("Enter png file name: ")
+                path = "Your_data/Your_Qr_Code/"+user_input_name+".png"
                 create_folder()
-                QRCode.png("Your_data/Your_Qr_Code/QRCode.png", scale=8)
+
+                qr = qrcode.QRCode(version=1,
+                                   box_size=10,
+                                   border=5)
+                qr.add_data(user_input)
+
+                qr.make(fit=True)
+                # change your color as your choise (fill_color='red')
+                img = qr.make_image(fill_color='red',
+                                    back_color='white')
+
+                img.save(path)
                 sg.Popup('Your File is On ', "'Your_data'", ' Folder')
                 real_python()
             else:
-                print("Internet Connection Are not Avilable, plz try again")
+                print("Internet Connection Are not Available, plz try again")
                 create_qr()
 
         def open_aplication():
