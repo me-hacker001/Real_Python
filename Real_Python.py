@@ -12,10 +12,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed#
 import json#
 from math import *#
 import random#
-import turtle#
 from random import *#
-from cffi.setuptools_ext import execfile
-from turtle import *#
 from turtle import *#
 from tkinter import *#
 import base64#
@@ -51,7 +48,7 @@ def print_dot():
 def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
-    test_list = ["pip", "PySimpleGUI", "argparse", "requests", "colorama", "pyqrcode", "pygame", "wget", "cryptography"]
+    test_list = ["pip", "PySimpleGUI", "argparse", "requests", "colorama", "pyqrcode", "pygame", "wget", "cryptography","turtle","cffi"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
@@ -81,6 +78,9 @@ try:
         from cryptography.fernet import Fernet
         import pygame
         import freegames
+        from cffi.setuptools_ext import execfile
+        import turtle
+        from turtle import *
         print("Module Import Successful")
         time.sleep(1)
         clear()
