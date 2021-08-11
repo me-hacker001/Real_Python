@@ -53,8 +53,7 @@ def retry():
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
         res = " ".join(test_list)
-        time.sleep(0.01)
-        clear()
+        
         module_size = 0
         print("Installed: ", test_list.pop(module_size))
         module_size = module_size + 1
