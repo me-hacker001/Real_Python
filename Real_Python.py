@@ -78,7 +78,7 @@ try:
     import colorama
     from colorama import Fore, Style
     import pyqrcode
-
+    import pygame
     import wget
     from cryptography.fernet import Fernet
     from cffi.setuptools_ext import execfile
