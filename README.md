@@ -1,3 +1,7 @@
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+# Glad to see you here!  ![visitors](https://visitor-badge.glitch.me/badge?page_id=code-with-Xcoder.Real_Python)
+
 # Real_Python
 This is for begginers coder and some meture coder of python . This help your for simple coding by many types of example of Python. Like Python modern Calculator, upto 10 games, upto 20 types of Virus, Bomber(SMS,CALL,MAIL),Encryption-Decryption, Create_QR code, install anything by link, know your exact time from birth to this and many more....... 
 # List of Basic Python-Example
@@ -89,6 +93,9 @@ You can also download Real_Python as zip and manually run Real_Python.py on suit
 click here for download - [Real_Python](https://github.com/code-with-Xcoder/Real_Python/archive/refs/heads/master.zip)
 
 # Contact us
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:xcoder.info@gmail.com)
+
+
 Primary Email: xcoder.info@gmail.com <br />
 Secondary Email: info.realpython@gmail.com <br />
 Website for contacting us: https://form.craftbook.xyz <br />
@@ -96,3 +103,8 @@ YouTube: [In_Future_World](https://www.youtube.com/channel/UCh5_VB1guUcc0mWAOc7e
 Instagram: [In_Future_World](https://www.instagram.com/in_future_world/) <br />
 Twitter: [In_Future_World](https://twitter.com/In_future_world) <br />
 GitHub: [code-with-Xcoder](https://github.com/code-with-Xcoder) <br />
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=code-with-Xcoder&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
+
+
+
