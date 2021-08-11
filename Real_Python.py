@@ -52,7 +52,7 @@ def print_dot():
 def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
-    test_list = ["pip", "PySimpleGUI", "argparse", "requests", "colorama", "pyqrcode", "pygame", "wget", "cryptography",
+    test_list = ["pip", "PySimpleGUI", "argparse", "requests", "colorama", "pygame", "wget", "cryptography",
                  "turtle", "cffi","qrcode"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
@@ -75,8 +75,7 @@ try:
     import argparse
     import requests
     import colorama
-    from colorama import Fore, Style
-    import pyqrcode
+    from colorama import Fore, Style    
     import pygame
     import wget
     from cryptography.fernet import Fernet
