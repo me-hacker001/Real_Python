@@ -1,7 +1,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/code-with-Xcoder/) [![Follow](https://img.shields.io/github/followers/code-with-Xcoder)](https://github.com/code-with-Xcoder/) [![Star](https://img.shields.io/github/stars/code-with-Xcoder/Real_Python)](https://github.com/code-with-Xcoder/Real_Python) [![Size](https://img.shields.io/github/repo-size/code-with-Xcoder/Real_Python)](https://github.com/code-with-Xcoder/Real_Python)    
 [![Twitter](https://img.shields.io/twitter/follow/in_future_world)](https://twitter.com/In_future_world)  [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCh5_VB1guUcc0mWAOc7etrA)](https://www.youtube.com/channel/UCh5_VB1guUcc0mWAOc7etrA) 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat)](https://www.instagram.com/in_future_world/)
-[![Instagram1](https://www.instagram.com/in_future_world/)](https://www.instagram.com/in_future_world/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=&logo=instagram&logoColor=white)](https://www.instagram.com/in_future_world/)
+
 
 
 
@@ -107,6 +107,13 @@ click here for download - [Real_Python](https://github.com/code-with-Xcoder/Real
 
 # Contact us
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:xcoder.info@gmail.com)
+[![Gmail!](https://img.shields.io/badge/Primary-Gmail-D14836?style=&logo=gmail&logoColor=white)](mailto:xcoder.info@gmail.com)
+[![Gmail!](https://img.shields.io/badge/Secondary-Gmail-D14836?style=&logo=gmail&logoColor=white)](mailto:info.realpython@gmail.com)
+[![Twitter!](https://img.shields.io/badge/Twitter-1DA1F2?style=&logo=twitter&logoColor=white)](https://twitter.com/In_future_world)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=&logo=instagram&logoColor=white)](https://www.instagram.com/in_future_world/)
+[![Contact Us](https://img.shields.io/badge/Contact-Us-blue?style=&logo=deviantart&logoColor=white)](https://form.craftbook.xyz)
+[![Git Hub](https://img.shields.io/badge/Git-Hub-lightgrey?style=&logo=github&logoColor=white)](https://github.com/code-with-Xcoder)
+
 
 
 Primary Email: xcoder.info@gmail.com <br />
