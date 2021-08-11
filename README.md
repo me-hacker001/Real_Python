@@ -1,4 +1,17 @@
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/code-with-Xcoder/) [![Follow](https://img.shields.io/github/followers/code-with-Xcoder)](https://github.com/code-with-Xcoder/) [![Star](https://img.shields.io/github/stars/code-with-Xcoder/Real_Python)](https://github.com/code-with-Xcoder/Real_Python) [![Size](https://img.shields.io/github/repo-size/code-with-Xcoder/Real_Python)](https://github.com/code-with-Xcoder/Real_Python)    
+[![Twitter](https://img.shields.io/twitter/follow/in_future_world)](https://twitter.com/In_future_world)  [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCh5_VB1guUcc0mWAOc7etrA)](https://www.youtube.com/channel/UCh5_VB1guUcc0mWAOc7etrA) 
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat)](https://www.instagram.com/in_future_world/)
+[![Instagram1](https://www.instagram.com/in_future_world/)](https://www.instagram.com/in_future_world/)
+
+
+
+
+
+
+
+
+
+
 
 # Glad to see you here!  ![visitors](https://visitor-badge.glitch.me/badge?page_id=code-with-Xcoder.Real_Python)
 
