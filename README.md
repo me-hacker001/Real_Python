@@ -45,7 +45,7 @@ If you get the following or greater
 Python 3.8.3
 ```
 greater than or eqaul-to version 3 is supported.
-# No Module_Tension
+# No Module installing Tension
 Real_Python automatically install module or update them, when you run it. 
 ## Installations
 There are some methods for using Real_Python.
