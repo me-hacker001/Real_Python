@@ -1,21 +1,10 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/code-with-Xcoder/) [![Follow](https://img.shields.io/github/followers/code-with-Xcoder)](https://github.com/code-with-Xcoder/) [![Star](https://img.shields.io/github/stars/code-with-Xcoder/Real_Python)](https://github.com/code-with-Xcoder/Real_Python) [![Size](https://img.shields.io/github/repo-size/code-with-Xcoder/Real_Python)](https://github.com/code-with-Xcoder/Real_Python)    
 [![Twitter](https://img.shields.io/twitter/follow/in_future_world)](https://twitter.com/In_future_world)  [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCh5_VB1guUcc0mWAOc7etrA)](https://www.youtube.com/channel/UCh5_VB1guUcc0mWAOc7etrA) 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=&logo=instagram&logoColor=white)](https://www.instagram.com/in_future_world/)
-
-
-
-
-
-
-
-
-
-
-
-
 # Glad to see you here!  ![visitors](https://visitor-badge.glitch.me/badge?page_id=code-with-Xcoder.Real_Python)
 
 # Real_Python
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:xcoder.info@gmail.com)<br />
 This is for begginers coder and some meture coder of python . This help your for simple coding by many types of example of Python. Like Python modern Calculator, upto 10 games, upto 20 types of Virus, Bomber(SMS,CALL,MAIL),Encryption-Decryption, Create_QR code, install anything by link, know your exact time from birth to this and many more....... 
 # List of Basic Python-Example
 - Calculator
@@ -48,7 +37,7 @@ Check your Python version by typing this command
 ```shell script
 python --version
 ```
-If you get the following or gr
+If you get the following or greater
 ```shell script
 Python 3.8.3
 ```
@@ -106,14 +95,12 @@ You can also download Real_Python as zip and manually run Real_Python.py on suit
 click here for download - [Real_Python](https://github.com/code-with-Xcoder/Real_Python/archive/refs/heads/master.zip)
 
 # Contact us
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:xcoder.info@gmail.com)
+
 [![Gmail!](https://img.shields.io/badge/Primary-Gmail-D14836?style=&logo=gmail&logoColor=white)](mailto:xcoder.info@gmail.com)
 [![Gmail!](https://img.shields.io/badge/Secondary-Gmail-D14836?style=&logo=gmail&logoColor=white)](mailto:info.realpython@gmail.com)
 [![Twitter!](https://img.shields.io/badge/Twitter-1DA1F2?style=&logo=twitter&logoColor=white)](https://twitter.com/In_future_world)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=&logo=instagram&logoColor=white)](https://www.instagram.com/in_future_world/)
-[![Instagram](https://img.shields.io/badge/You-Tube-red?style=&logo=youtube&logoColor=red)](https://www.instagram.com/in_future_world/)
-
-
+[![YouTube](https://img.shields.io/badge/You-Tube-red?style=&logo=youtube&logoColor=red)](https://www.youtube.com/channel/UCh5_VB1guUcc0mWAOc7etrA)
 [![Git Hub](https://img.shields.io/badge/Git-Hub-lightgrey?style=&logo=github&logoColor=white)](https://github.com/code-with-Xcoder)
 [![Contact Us](https://img.shields.io/badge/Contact-Us-blue?style=&logo=deviantart&logoColor=white)](https://form.craftbook.xyz)
 
