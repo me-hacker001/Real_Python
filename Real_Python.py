@@ -4,56 +4,61 @@ import os
 import sys
 import pip
 import threading
-import webbrowser#
-import smtplib#
-import os#
-import string#
-from concurrent.futures import ThreadPoolExecutor, as_completed#
-import json#
-from math import *#
-import random#
-from random import *#
-from turtle import *#
-from tkinter import *#
-import base64#
-import datetime#
-from datetime import datetime#
-from datetime import date#
+import webbrowser  #
+import smtplib  #
+import os  #
+import string  #
+from concurrent.futures import ThreadPoolExecutor, as_completed  #
+import json  #
+from math import *  #
+import random  #
+from random import *  #
+from turtle import *  #
+from tkinter import *  #
+import base64  #
+import datetime  #
+from datetime import datetime  #
+from datetime import date  #
 import io
 import urllib
+
 
 def clear():
     if name == 'nt':
         system('cls')
     else:
         system('clear')
+
+
 dot_printing_time = 0
 value_dat = 0
 
-def print_dot():
-        a = 0
-        while dot_printing_time == 0:
-            time.sleep(1)
-            a = a + 1
-            b = ("Installing Module" + "." * a + "Plz Wait")
-            print(b)
-            clear()
-            if a >= 5:
-                print_dot()
 
-        else:
-            sys.exit()
+def print_dot():
+    a = 0
+    while dot_printing_time == 0:
+        time.sleep(1)
+        a = a + 1
+        b = ("Installing Module" + "." * a + "Plz Wait")
+        print(b)
+        clear()
+        if a >= 5:
+            print_dot()
+
+    else:
+        sys.exit()
 
 
 def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
-    test_list = ["pip", "PySimpleGUI", "argparse", "requests", "colorama", "pyqrcode", "pygame", "wget", "cryptography","turtle","cffi"]
+    test_list = ["pip", "PySimpleGUI", "argparse", "requests", "colorama", "pyqrcode", "pygame", "wget", "cryptography",
+                 "turtle", "cffi"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
         res = " ".join(test_list)
-        
+
         module_size = 0
         print("Installed: ", test_list.pop(module_size))
         module_size = module_size + 1
@@ -65,33 +70,37 @@ def retry():
     time.sleep(3)
     sys.exit()
 
+
 try:
-        import PySimpleGUI as sg
-        import argparse
-        import requests
-        import colorama
-        from colorama import Fore, Style
-        import pyqrcode
-        import pygame
-        import wget
-        from cryptography.fernet import Fernet     
-        from cffi.setuptools_ext import execfile
-        import turtle
-        from turtle import *
-        print("Module Import Successful")
-        time.sleep(1)
-        clear()
+    import PySimpleGUI as sg
+    import argparse
+    import requests
+    import colorama
+    from colorama import Fore, Style
+    import pyqrcode
+
+    import wget
+    from cryptography.fernet import Fernet
+    from cffi.setuptools_ext import execfile
+    import turtle
+    from turtle import *
+
+    print("Module Import Successful")
+    time.sleep(1)
+    clear()
 except ModuleNotFoundError:
     retry()
 
+
 def contact():
-    print(Fore.YELLOW+"Primary Email: xcoder.info@gmail.com\n"
-    "Secondary Email: info.realpython@gmail.com\n"
-    "Website for contacting us: https://form.craftbook.xyz\n"
-    "YouTube: In_Future_World and Craft Book\n"
-    "Instagram: In_Future_World\n"
-    "Twitter: In_Future_World\n"
-    "GitHub: code-with-Xcoder\n")
+    print(Fore.YELLOW + "Primary Email: xcoder.info@gmail.com\n"
+                        "Secondary Email: info.realpython@gmail.com\n"
+                        "Website for contacting us: https://form.craftbook.xyz\n"
+                        "YouTube: In_Future_World and Craft Book\n"
+                        "Instagram: In_Future_World\n"
+                        "Twitter: In_Future_World\n"
+                        "GitHub: code-with-Xcoder\n")
+
 
 answer = 0
 score = 0
@@ -101,9 +110,10 @@ scoreRight = 0
 maxScore = 20
 zip_number = 0
 
+
 def real_python():
     def banner():
-        banner1 = Fore.BLUE+ '''
+        banner1 = Fore.BLUE + '''
      ____            _     ____        _   _                 
     |  _ \ ___  __ _| |   |  _ \ _   _| |_| |__   ___  _ __  
     | |_) / _ \/ _` | |   | |_) | | | | __| '_ \ / _ \| '_ \ 
@@ -112,17 +122,20 @@ def real_python():
                      |_____|     |___/                       
         '''
         print(banner1)
+
     banner()
+
     def check_for_update():
         print("Checking for Update......")
-        #threading.Thread(target=print_dot1).start()
+        # threading.Thread(target=print_dot1).start()
         global zip_number
         zip_number = 1
+
         def update_now():
-            print(Fore.BLUE+"Press y for update it now \n"
-                  "Press enter to continue")
+            print(Fore.BLUE + "Press y for update it now \n"
+                              "Press enter to continue")
             update_com = input("Enter choise: ")
-            if update_com=="y" or update_com=="Y":
+            if update_com == "y" or update_com == "Y":
                 webbrowser.open_new('https://github.com/code-with-Xcoder/Real_Python.git')
                 clear()
                 banner()
@@ -132,33 +145,38 @@ def real_python():
                 banner()
                 pass
             pass
-        version = '1.0.1'
+
+
         try:
             read_file = io.open(".version", "r", encoding="utf-8")
-        except FileNotFoundError:
-            print(Fore.RED+"Version file not found........!\n"
-                  "PLz, reinstall Your Package")
-        read_text = read_file.read()
-        url = "https://raw.githubusercontent.com/code-with-Xcoder/Real_Python/main/.version"
-        file = urllib.request.urlopen(url)
-        for line in file:
-            decoded_line = line.decode("utf-8")
+            read_text = read_file.read()
+            url = "https://github.com/code-with-Xcoder/Real_Python/raw/master/.version"
+            file = urllib.request.urlopen(url)
+            for line in file:
+                decoded_line = line.decode("utf-8")
 
-        if (read_text == decoded_line):
-            print(Fore.YELLOW+"Real_Python is upto date"
-                  "\nYour Version: ", read_text, "\n")
-            time.sleep(1)
-            del (file)
-            clear()
-            banner()
-            pass
-        if (read_text < decoded_line):
-            print(Fore.RED+"New version of Real_Python is Available")
-            print(" Your Version: ", read_text,
-                  "Available version: ", decoded_line)
-            update_now()
-            del (file)
-            pass
+            if (read_text == decoded_line):
+                print(Fore.YELLOW + "Real_Python is upto date"
+                                    "\nYour Version: ", read_text, "\n")
+                time.sleep(1)
+                del (file)
+                clear()
+                banner()
+                pass
+            if (read_text < decoded_line):
+                print(Fore.RED + "New version of Real_Python is Available")
+                print(" Your Version: ", read_text,
+                      "\nAvailable version: ", decoded_line)
+                update_now()
+                del (file)
+                pass
+        except FileNotFoundError:
+            print(Fore.RED + "Version file not found........!\n"
+                             "PLz, reinstall Your Package")
+
+
+
+
     if zip_number == 0:
         check_for_update()
     else:
@@ -193,19 +211,20 @@ def real_python():
             return True
         except Exception:
             return False
+
     contact()
     time.sleep(2)
-    print(Fore.GREEN +"1 For Launch Calculator. \n"
-                        "2 For Funny And Dangerous .bat and .vbs Virus.\n"
-                        "3 For Launch Bomber(SMS,CALL,MAIL).\n"
-                        "4 For Play Games.\n"
-                        "5 For Convert url or secret text in QrCode.\n"
-                        "6 For Open Any application or file by it's Location.\n"
-                        "7 For install Many Python Module at One Time By Only it's Name.\n"
-                        "8 For Downloading File or Video Or Anything.\n"
-                        "9 For Encrypting Files and texts.\n"
-                        "10 For Know How old You are.\n"+
-                      Fore.RED+"Press y to Fill Form for New Feature or Contact or Give us Suggestion")
+    print(Fore.GREEN + "1 For Launch Calculator. \n"
+                       "2 For Funny And Dangerous .bat and .vbs Virus.\n"
+                       "3 For Launch Bomber(SMS,CALL,MAIL).\n"
+                       "4 For Play Games.\n"
+                       "5 For Convert url or secret text in QrCode.\n"
+                       "6 For Open Any application or file by it's Location.\n"
+                       "7 For install Many Python Module at One Time By Only it's Name.\n"
+                       "8 For Downloading File or Video Or Anything.\n"
+                       "9 For Encrypting Files and texts.\n"
+                       "10 For Know How old You are.\n" +
+          Fore.RED + "Press y to Fill Form for New Feature or Contact or Give us Suggestion")
 
     def full():
 
@@ -245,20 +264,20 @@ def real_python():
             def help():
                 contact()
                 print(Fore.GREEN + "Enter any float Number and in Symbol, these are allowed:\n"
-                               "(/, *, -, +, %, //, **)\n"
-                               "1- First input Numbers\n"
-                               "2- input sign\n"
-                               "3- again input number\n"
-                               "4- input number or input (=) for allover output\n"
-                               "Example:\n"
-                               "Enter Number: 5\n"
-                               "Enter Sign: *\n"
-                               "Enter Number: 4\n"
-                               "20.0\n"
-                               "Enter Sign: =\n"
-                               "Result: \n"
-                               "5.0 * 4.0 \n"
-                               "Total:  20.0\n")
+                                   "(/, *, -, +, %, //, **)\n"
+                                   "1- First input Numbers\n"
+                                   "2- input sign\n"
+                                   "3- again input number\n"
+                                   "4- input number or input (=) for allover output\n"
+                                   "Example:\n"
+                                   "Enter Number: 5\n"
+                                   "Enter Sign: *\n"
+                                   "Enter Number: 4\n"
+                                   "20.0\n"
+                                   "Enter Sign: =\n"
+                                   "Result: \n"
+                                   "5.0 * 4.0 \n"
+                                   "Total:  20.0\n")
 
             print(Fore.GREEN + "Press h for help\n"
                                "Press y to fill form for new sign and feature")
@@ -460,17 +479,17 @@ def real_python():
 
         def bat():
             print(Fore.GREEN + "Press 1 for Simple or Funny Virus.\n"
-                           "Press 2 for Dangerous Virus.")
+                               "Press 2 for Dangerous Virus.")
             bat_input = input("Input: ")
             if bat_input == "1":
                 print(Fore.GREEN + "1 - To Create The Matrix Rain In Command Prompt\n"
-                               "2 - To Endless Pressing Enter\n"
-                               "3 - Virus that continuously eject CD/DVD drives\n"
-                               "4 - Continuously type a message at any writable place on screen-VBS Trick\n"
-                               "5 - Shutdown Your Friends Computer with your Message\n"
-                               "6 - For notepad Personal dairy \n"
-                               "7 - Unlimited Background Process Creator\n"
-                               "8 - Toggle your friend’s Caps Lock button simultaneously")
+                                   "2 - To Endless Pressing Enter\n"
+                                   "3 - Virus that continuously eject CD/DVD drives\n"
+                                   "4 - Continuously type a message at any writable place on screen-VBS Trick\n"
+                                   "5 - Shutdown Your Friends Computer with your Message\n"
+                                   "6 - For notepad Personal dairy \n"
+                                   "7 - Unlimited Background Process Creator\n"
+                                   "8 - Toggle your friend’s Caps Lock button simultaneously")
 
                 def simple_bat_1():
                     try:
@@ -612,17 +631,17 @@ def real_python():
             if bat_input == "2":
                 print(
                     Fore.GREEN + "1 - Launch (winword, mspaint, notepad, write, cmd, explorer, control, calc) for infinity times\n"
-                             "2 - Delete system32 forever (you can't able to start your computer\n"
-                             "3 - Disable Internet Permanently\n"
-                             "4 - Remove Entire Registry Key\n"
-                             "5 - Create Unlimited numbers of Folder and user account\n"
-                             "6 - Create Unlimited User Account in his pc \n"
-                             "7 - Create Unlimited Background Process in Victim pc\n"
-                             "8 - Delete Victims whole C:\ drive (this is unrecoverable)\n"
-                             "9 - Disable Antivirus(all) of Victim Computer\n"
-                             "10 - Crash PC forever\n"
+                                 "2 - Delete system32 forever (you can't able to start your computer\n"
+                                 "3 - Disable Internet Permanently\n"
+                                 "4 - Remove Entire Registry Key\n"
+                                 "5 - Create Unlimited numbers of Folder and user account\n"
+                                 "6 - Create Unlimited User Account in his pc \n"
+                                 "7 - Create Unlimited Background Process in Victim pc\n"
+                                 "8 - Delete Victims whole C:\ drive (this is unrecoverable)\n"
+                                 "9 - Disable Antivirus(all) of Victim Computer\n"
+                                 "10 - Crash PC forever\n"
 
-                             "")
+                                 "")
 
                 def dang_bat_1():
                     try:
@@ -1969,7 +1988,7 @@ def real_python():
                 play_games()
 
         def create_qr():
-            if (check_internet())==True:
+            if (check_internet()) == True:
                 user_input = input("Enter Url or Secret Text: ")
                 QRCode = pyqrcode.create(user_input)
                 path2 = "Your_data/Your_Qr_Code/"
@@ -1986,7 +2005,7 @@ def real_python():
             os.system(loation)
 
         def install_Module():
-            if (check_internet())==True:
+            if (check_internet()) == True:
                 try:
                     quantity = input("How Many Module you want to Install: ")
                     quantity = int(quantity)
@@ -2026,12 +2045,12 @@ def real_python():
                 create_folder()
                 with open("Your_data/Your_Downloaded_Files/" + file_name + file_exet, 'wb') as f:
                     f.write(r.content)
-                    print(Fore.YELLOW+"Success...!")
-                    print(Fore.RED+'Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.YELLOW + "Success...!")
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
                 time.sleep(2)
                 real_python()
-            except WindowsError :
-                print(Fore.RED+"Plz Check Your internet Connection And try Again")
+            except WindowsError:
+                print(Fore.RED + "Plz Check Your internet Connection And try Again")
                 time.sleep(2)
                 real_python()
 
@@ -2050,8 +2069,8 @@ def real_python():
                 password = input_user_string.encode("utf-8")
                 encoded = base64.b64encode(password)
                 abcd = str(encoded, 'utf-8')
-                abc  = abcd.strip("'")
-                print(Fore.RED+"This is your secret message: ",abc)
+                abc = abcd.strip("'")
+                print(Fore.RED + "This is your secret message: ", abc)
                 print("Copy text and send it anywhere\n"
                       "for decoding text, go to encryption-decryption menu and select 3 number and paste it")
                 input("Press Enter to continue: ")
@@ -2071,11 +2090,12 @@ def real_python():
                         file_encyption()
                     try:
                         file_location = input("Enter File Location : ")
-                        file_extension = "."+input("Enter OutFile Extension(without dot): ")
+                        file_extension = "." + input("Enter OutFile Extension(without dot): ")
                         with open(file_location, 'rb') as file:
                             original = file.read()
                         encrypted = fernet.encrypt(original)
-                        with open('Your_data/Your_Encryption_key_Files/Your_Encrypted_File'+file_extension, 'wb') as encrypted_file:
+                        with open('Your_data/Your_Encryption_key_Files/Your_Encrypted_File' + file_extension,
+                                  'wb') as encrypted_file:
                             encrypted_file.write(encrypted)
                         print("File Encrypted SuccessFul")
                         print("go-to /Your_data folder/Your_Encryption_key_Files and find your file\n"
@@ -2088,6 +2108,7 @@ def real_python():
                     except WindowsError:
                         print("File Does not exist, plz try again")
                         file_encyption()
+
                 file_encyption()
 
             if input_user_method == 3:
@@ -2105,13 +2126,14 @@ def real_python():
                     except UnicodeDecodeError:
                         print("Entered string is in correct, plz try again")
                         string_decryption()
+
                 string_decryption()
 
             if input_user_method == 4:
                 def file_decryption():
-                    print(Fore.RED+"If You got any error, then this mean: \n"
-                                   "1 - Your encrpted text is not encrypted by Real_Python or he is not encrypted or \n"
-                                   "2 - Your Key is Invalid")
+                    print(Fore.RED + "If You got any error, then this mean: \n"
+                                     "1 - Your encrpted text is not encrypted by Real_Python or he is not encrypted or \n"
+                                     "2 - Your Key is Invalid")
                     input_location_file2 = input("Enter Encrypted File location: ")
                     input_location2 = input("Enter full location of keyfile : ")
                     try:
@@ -2134,6 +2156,7 @@ def real_python():
                               "2 - Wrong YourKey.key Location \n"
                               "PLZ TRY AGAIN WITH WRIGHT THINGS")
                         file_decryption()
+
                 file_decryption()
 
         def tell_age():
@@ -2158,6 +2181,7 @@ def real_python():
                     birth_sec = int(birth_sec)
                 except ValueError:
                     birth_sec = 0
+
                 def press_enter_exit():
                     global value_dat
                     press_me = input("Press enter to exit: ")
@@ -2180,16 +2204,16 @@ def real_python():
                     age_min = abs(current_min - birth_min)
                     age_sec = abs(current_sec - birth_sec)
                     print("\nYour exact age is: ", age_year, "Years", age_month, "months ", age_day, "days", age_hour,
-                          "hour", age_min, "minute and ", age_sec,"second\n")
+                          "hour", age_min, "minute and ", age_sec, "second\n")
                     threading.Thread(target=press_enter_exit).start()
                     clear()
             except ValueError:
                 print("Error: input correct numbers ")
                 tell_age()
-            while value_dat==0:
-                    threading.Thread(target=for_current_time).start()
-                    time.sleep(1)
-                    clear()
+            while value_dat == 0:
+                threading.Thread(target=for_current_time).start()
+                time.sleep(1)
+                clear()
 
         input_user = input("Input: ")
         if input_user == "1":
@@ -2243,6 +2267,8 @@ def real_python():
             full()
 
     full()
+
+
 real_python()
 
-#Xcoder
+# Xcoder
