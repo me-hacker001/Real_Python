@@ -51,8 +51,6 @@ Real_Python automatically install module or update them, when you run it.
 There are some methods for using Real_Python.
 Chose what you want.
 #### For Termux:
- - ***Some Feature are not avaliable for Termux***<br />
-
 Commands for Termux:
 ```shell script
 pkg install git -y 
@@ -60,7 +58,7 @@ pkg install python -y
 pkg install python-tkinter
 git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
-python Real_Python.py
+python Real_Python_termux.py
 ```
 
 #### For Debian-based:
