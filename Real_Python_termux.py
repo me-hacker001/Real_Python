@@ -23,7 +23,7 @@ import io
 import urllib
 
 
-def clear():
+def clear1():
     try:
         if name == 'nt':
             system('cls')
@@ -44,7 +44,7 @@ def print_dot():
         a = a + 1
         b = ("Installing Module" + "." * a + "Plz Wait")
         print(b)
-        clear()
+        clear1()
         if a >= 5:
             print_dot()
 
@@ -87,7 +87,7 @@ try:
 
     print("Module Import Successful")
     time.sleep(1)
-    clear()
+    clear1()
 except ModuleNotFoundError:
     retry()
 
@@ -137,11 +137,11 @@ def real_python():
             update_com = input("Enter choise: ")
             if update_com == "y" or update_com == "Y":
                 webbrowser.open_new('https://github.com/code-with-Xcoder/Real_Python.git')
-                clear()
+                clear1()
                 banner()
                 sys.exit()
             else:
-                clear()
+                clear1()
                 banner()
                 pass
             pass
@@ -160,7 +160,7 @@ def real_python():
                                     "\nYour Version: ", read_text, "\n")
                 time.sleep(1)
                 del (file)
-                clear()
+                clear1()
                 banner()
                 pass
             if (read_text < decoded_line):
@@ -1988,7 +1988,7 @@ def real_python():
                     pip_data1 = pip_data1 + 1
                     pip.main(['install'] + test_list + ['--upgrade'])
                     time.sleep(0.01)
-                    clear()
+                    clear1()
                     module_size = 0
                     print("Installed: ", test_list.pop(module_size))
                     module_size = module_size + 1
@@ -2062,14 +2062,14 @@ def real_python():
                     print("\nYour exact age is: ", age_year, "Years", age_month, "months ", age_day, "days", age_hour,
                           "hour", age_min, "minute and ", age_sec, "second\n")
                     threading.Thread(target=press_enter_exit).start()
-                    clear()
+                    clear1()
             except ValueError:
                 print("Error: input correct numbers ")
                 tell_age()
             while value_dat == 0:
                 threading.Thread(target=for_current_time).start()
                 time.sleep(1)
-                clear()
+                clear1()
 
         input_user = input("Input: ")
         if input_user == "1":
