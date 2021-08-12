@@ -81,6 +81,16 @@ git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
 python realpython.py
 ```
+
+#### For Window CMD:
+Commands for Window cmd.
+```shell script
+pip install GitPython
+git clone https://github.com/code-with-Xcoder/Real_Python.git
+cd Real_Python
+python realpython.py
+```
+
 #### For iSH:
 
 Commands for iSH.
