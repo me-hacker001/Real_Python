@@ -76,7 +76,6 @@ try:
     import requests
     import colorama
     from colorama import Fore, Style
-    import pygame
     import wget
     from cffi.setuptools_ext import execfile
     import turtle
