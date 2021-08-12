@@ -58,7 +58,7 @@ pkg install python -y
 pkg install python-tkinter
 git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
-python Real_Python_termux.py
+python termuxpython.py
 ```
 
 #### For Debian-based:
@@ -67,7 +67,7 @@ Commands for Debian-based terminal.
 sudo apt install git
 git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
-python Real_Python.py
+python realpython.py
 ```
 
 #### For MacOS:
@@ -79,7 +79,7 @@ sudo easy_install pip
 sudo pip install --upgrade pip
 git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
-python Real_Python.py
+python realpython.py
 ```
 #### For iSH:
 
@@ -92,7 +92,7 @@ apk add ruby
 gem install toilet
 git clone https://github.com/code-with-Xcoder/Real_Python.git
 cd Real_Python
-python Real_Python.py
+python realpython.py
 ```
 ## **_Or download it as zip and run manually Real_Python.py_**
 You can also download Real_Python as zip and manually run Real_Python.py on suitable software <br />
