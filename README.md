@@ -51,6 +51,7 @@ Real_Python automatically install module or update them, when you run it.
 There are some methods for using Real_Python.
 Chose what you want.
 #### For Termux:
+## ***Some feature are not avaliable in termux***
 Commands for Termux:
 ```shell script
 pkg install git -y 
