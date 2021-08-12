@@ -4,7 +4,6 @@ import os
 import sys
 import pip
 import threading
-import webbrowser  #
 import smtplib  #
 import os  #
 import string  #
@@ -137,7 +136,7 @@ def real_python():
                               "Press enter to continue")
             update_com = input("Enter choise: ")
             if update_com == "y" or update_com == "Y":
-                webbrowser.open_new('https://github.com/code-with-Xcoder/Real_Python.git')
+                os.system('termux-open-url https://github.com/code-with-Xcoder/Real_Python.git')
                 clear1()
                 banner()
                 sys.exit()
@@ -195,7 +194,7 @@ def real_python():
         if not os.path.exists(path3):
             os.makedirs(path3)
     def web():
-        webbrowser.open_new('http://form.craftbook.xyz')
+        os.system('termux-open-url http://form.craftbook.xyz')
     def check_internet():
         try:
             requests.get("https://google.com")
