@@ -2010,7 +2010,7 @@ def real_python():
                     print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
                 time.sleep(2)
                 real_python()
-            except WindowsError:
+            except :
                 print(Fore.RED + "Plz Check Your internet Connection And try Again")
                 time.sleep(2)
                 real_python()
