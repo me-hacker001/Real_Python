@@ -24,10 +24,13 @@ import urllib
 
 
 def clear():
-    if name == 'nt':
-        system('cls')
-    else:
-        system('clear')
+    try:
+        if name == 'nt':
+            system('cls')
+        else:
+            system('clear')
+    except:
+        pass
 
 
 dot_printing_time = 0
@@ -52,7 +55,7 @@ def print_dot():
 def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
-    test_list = ["pip", "PySimpleGUI==4.16.0", "argparse", "requests", "colorama", "wget==3.2", "cryptography",
+    test_list = ["pip", "PySimpleGUI==4.16.0", "argparse", "requests", "colorama", "wget==3.2",
                  "turtle", "cffi","qrcode"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
@@ -184,7 +187,7 @@ def real_python():
         path1 = "Your_data/Bat_virus/Dangerous_bat_Virus/"
         path2 = "Your_data/Your_Qr_Code/"
         path3 = "Your_data/Your_Downloaded_Files/"
-        
+
 
         if not os.path.exists(path):
             os.makedirs(path)
@@ -194,7 +197,7 @@ def real_python():
             os.makedirs(path2)
         if not os.path.exists(path3):
             os.makedirs(path3)
-        
+
 
 
     def web():
