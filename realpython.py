@@ -4,7 +4,6 @@ import os
 import sys
 import pip
 import threading
-import webbrowser  #
 import smtplib  #
 import os  #
 import string  #
@@ -23,11 +22,14 @@ import io
 import urllib
 
 
-def clear():
-    if name == 'nt':
-        system('cls')
-    else:
-        system('clear')
+def clear1():
+    try:
+        if name == 'nt':
+            system('cls')
+        else:
+            system('clear')
+    except:
+        pass
 
 
 dot_printing_time = 0
@@ -41,7 +43,7 @@ def print_dot():
         a = a + 1
         b = ("Installing Module" + "." * a + "Plz Wait")
         print(b)
-        clear()
+        clear1()
         if a >= 5:
             print_dot()
 
@@ -52,8 +54,8 @@ def print_dot():
 def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
-    test_list = ["pip", "PySimpleGUI", "argparse", "requests","image", "colorama", "pygame", "wget", "cryptography",
-                 "turtle", "cffi","qrcode"]
+    test_list = ["pip", "PySimpleGUI==4.16.0", "argparse", "requests", "colorama", "wget==3.2",
+                 "turtle", "cffi","qrcode","image"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
@@ -76,9 +78,7 @@ try:
     import requests
     import colorama
     from colorama import Fore, Style
-    import pygame
     import wget
-    from cryptography.fernet import Fernet
     from cffi.setuptools_ext import execfile
     import turtle
     from turtle import *
@@ -87,7 +87,7 @@ try:
 
     print("Module Import Successful")
     time.sleep(1)
-    clear()
+    clear1()
 except ModuleNotFoundError:
     retry()
 
@@ -136,12 +136,12 @@ def real_python():
                               "Press enter to continue")
             update_com = input("Enter choise: ")
             if update_com == "y" or update_com == "Y":
-                webbrowser.open_new('https://github.com/code-with-Xcoder/Real_Python.git')
-                clear()
+                os.system('termux-open-url https://github.com/code-with-Xcoder/Real_Python.git')
+                clear1()
                 banner()
                 sys.exit()
             else:
-                clear()
+                clear1()
                 banner()
                 pass
             pass
@@ -160,7 +160,7 @@ def real_python():
                                     "\nYour Version: ", read_text, "\n")
                 time.sleep(1)
                 del (file)
-                clear()
+                clear1()
                 banner()
                 pass
             if (read_text < decoded_line):
@@ -173,7 +173,6 @@ def real_python():
         except FileNotFoundError:
             print(Fore.RED + "Version file not found........!\n"
                              "PLz, reinstall Your Package")
-
     if zip_number == 0:
         check_for_update()
     else:
@@ -184,7 +183,7 @@ def real_python():
         path1 = "Your_data/Bat_virus/Dangerous_bat_Virus/"
         path2 = "Your_data/Your_Qr_Code/"
         path3 = "Your_data/Your_Downloaded_Files/"
-        path4 = "Your_data/Your_Encryption_key_Files/"
+
 
         if not os.path.exists(path):
             os.makedirs(path)
@@ -194,13 +193,8 @@ def real_python():
             os.makedirs(path2)
         if not os.path.exists(path3):
             os.makedirs(path3)
-        if not os.path.exists(path4):
-            os.makedirs(path4)
-
-
     def web():
-        webbrowser.open_new('http://form.craftbook.xyz')
-
+        os.system('termux-open-url http://form.craftbook.xyz')
     def check_internet():
         try:
             requests.get("https://google.com")
@@ -212,14 +206,12 @@ def real_python():
     time.sleep(2)
     print(Fore.GREEN + "1 For Launch Calculator. \n"
                        "2 For Funny And Dangerous .bat and .vbs Virus.\n"
-                       "3 For Launch Bomber(SMS,CALL,MAIL).\n"
-                       "4 For Play Games.\n"
-                       "5 For Convert url or secret text in QrCode.\n"
-                       "6 For Open Any application or file by it's Location.\n"
-                       "7 For install Many Python Module at One Time By Only it's Name.\n"
-                       "8 For Downloading File or Video Or Anything.\n"
-                       "9 For Encrypting Files and texts.\n"
-                       "10 For Know How old You are.\n" +
+                       "3 For Launch Bomber(SMS,CALL,MAIL).\n"                       
+                       "4 For Convert url or secret text in QrCode.\n"
+                       "5 For Open Any application or file by it's Location.\n"
+                       "6 For install Many Python Module at One Time By Only it's Name.\n"
+                       "7 For Downloading File or Video Or Anything.\n"                       
+                       "8 For Know How old You are.\n" +
           Fore.RED + "Press y to Fill Form for New Feature or Contact or Give us Suggestion")
 
     def full():
@@ -501,7 +493,8 @@ def real_python():
                             "GOTO START")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', '"Your_data"', ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_2():
@@ -520,7 +513,8 @@ def real_python():
                             "loop")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', '"Your_data"', ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_3():
@@ -544,7 +538,8 @@ def real_python():
                             "loop")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_4():
@@ -561,7 +556,8 @@ def real_python():
 
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_5():
@@ -576,7 +572,8 @@ def real_python():
                             'SHUTDOWN -C ' + '"' + user_message + '"' + ' -S')
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_6():
@@ -588,7 +585,8 @@ def real_python():
                     f.write(".LOG")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_7():
@@ -600,7 +598,8 @@ def real_python():
                     f.write("%0|%0")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def simple_bat_input():
@@ -657,7 +656,8 @@ def real_python():
                             "goto x")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_2():
@@ -669,7 +669,8 @@ def real_python():
                     f.write("del c:WINDOWSsystem32*.*/q")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_3():
@@ -686,7 +687,8 @@ def real_python():
                             "echo Disable ! PAUSE")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_4():
@@ -701,7 +703,8 @@ def real_python():
                             "START reg delete HKCR/*")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_5():
@@ -723,7 +726,8 @@ def real_python():
                     f.close()
                     f1.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_10():
@@ -743,7 +747,8 @@ def real_python():
                             "del c:windowswin.ini")
                     f.close()
                     contact()
-                    sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                    print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                    time.sleep(2)
                     bat()
 
                 def dang_bat_input():
@@ -1939,55 +1944,6 @@ def real_python():
                         real_python()
                 real_python()
 
-        def play_games():
-            print("1 - For Aircraft_War-Game\n"
-                  "2 - For  Snakes-and-Ladders\n"
-                  "3 - For F1-Road-Race-Game\n"
-                  "4 - For Rock-Paper-Scissor-Game\n"
-                  "5 - For Bounce_ball\n"
-                  "6 - For Dino-Game\n"
-                  "7 - For Flappy-Birds-Game\n"
-                  "8 - For Tank-Game\n"
-                  "9 - For Stick-Man-Game\n"
-                  "10 - For Guess-the-Word-Game-Project-in-Python\n")
-
-            try:
-                input_game_number = int(input("Enter Your Choise: "))
-            except ValueError:
-                print("Enter Valid Number")
-                contact()
-                play_games()
-            if input_game_number == 1:
-                os.system('python Games_Code/Aircraft_War-Game/AircraftGame.py')
-                play_games()
-            if input_game_number == 2:
-                os.system('python Games_Code/Snakes-and-Ladders/snakes_ladders.py')
-                play_games()
-            if input_game_number == 3:
-                os.system('python Games_Code/F1-Road-Race-Game/F1Race.py')
-                play_games()
-            if input_game_number == 4:
-                os.system('python Games_Code/Rock-Paper-Scissor-Game/rock_paper_scissor.py')
-                play_games()
-            if input_game_number == 5:
-                os.system('python Games_Code/Bounce_ball.py')
-                play_games()
-            if input_game_number == 6:
-                os.system('python Games_Code/Dino-Game/dino.py')
-                play_games()
-            if input_game_number == 7:
-                os.system('python Games_Code/Flappy-Birds-Game/flappy.py')
-                play_games()
-            if input_game_number == 8:
-                os.system('python Games_Code/Tank-Game/TankGame.py')
-                play_games()
-            if input_game_number == 9:
-                os.system('python Games_Code/Stick-Man-Game/stickman.py')
-                play_games()
-            if input_game_number == 10:
-                os.system('python Games_Code/Guess-the-Word-Game-Project-in-Python/index.py')
-                play_games()
-
         def create_qr():
             if (check_internet()) == True:
                 user_input = input("Enter Url or Secret Text: ")
@@ -2006,7 +1962,8 @@ def real_python():
                                     back_color='white')
 
                 img.save(path)
-                sg.Popup('Your File is On ', "'Your_data'", ' Folder')
+                print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
+                time.sleep(2)
                 real_python()
             else:
                 print(Fore.RED + "Plz Check Your internet Connection And try Again")
@@ -2022,7 +1979,7 @@ def real_python():
                 try:
                     quantity = input("How Many Module you want to Install: ")
                     quantity = int(quantity)
-                except ValueError:
+                except :
                     print("Error: PLz Input Correct Number")
                     install_Module()
                 test_list = ["pip"]
@@ -2040,7 +1997,7 @@ def real_python():
                     pip_data1 = pip_data1 + 1
                     pip.main(['install'] + test_list + ['--upgrade'])
                     time.sleep(0.01)
-                    clear()
+                    clear1()
                     module_size = 0
                     print("Installed: ", test_list.pop(module_size))
                     module_size = module_size + 1
@@ -2063,115 +2020,10 @@ def real_python():
                     print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
                 time.sleep(2)
                 real_python()
-            except WindowsError:
+            except :
                 print(Fore.RED + "Plz Check Your internet Connection And try Again")
                 time.sleep(3)
                 real_python()
-
-        def encryption():
-            print("1 For Sending Secret Message (Encrypt String). \n"
-                  "2 For Sending Secret File (Encrypt File).\n"
-                  "3 For Decoding Message (Decrypt String).\n"
-                  "4 For Decoding File (Decrypt File)")
-            try:
-                input_user_method = int(input("Enter Your Choise: "))
-            except ValueError:
-                print("Error: Enter Valid Number")
-                encryption()
-            if input_user_method == 1:
-                input_user_string = input("Enter Your Secret Message: ")
-                password = input_user_string.encode("utf-8")
-                encoded = base64.b64encode(password)
-                abcd = str(encoded, 'utf-8')
-                abc = abcd.strip("'")
-                print(Fore.RED + "This is your secret message: ", abc)
-                print("Copy text and send it anywhere\n"
-                      "for decoding text, go to encryption-decryption menu and select 3 number and paste it")
-                input("Press Enter to continue: ")
-                real_python()
-
-            if input_user_method == 2:
-                def file_encyption():
-                    key = Fernet.generate_key()
-                    try:
-                        with open('Your_data/Your_Encryption_key_Files/Yourkey.key', 'wb') as filekey:
-                            filekey.write(key)
-                        with open('Your_data/Your_Encryption_key_Files/Yourkey.key', 'rb') as filekey:
-                            key = filekey.read()
-                            fernet = Fernet(key)
-                    except WindowsError:
-                        create_folder()
-                        file_encyption()
-                    try:
-                        file_location = input("Enter File Location : ")
-                        file_extension = "." + input("Enter OutFile Extension(without dot): ")
-                        with open(file_location, 'rb') as file:
-                            original = file.read()
-                        encrypted = fernet.encrypt(original)
-                        with open('Your_data/Your_Encryption_key_Files/Your_Encrypted_File' + file_extension,
-                                  'wb') as encrypted_file:
-                            encrypted_file.write(encrypted)
-                        print("File Encrypted SuccessFul")
-                        print("go-to /Your_data folder/Your_Encryption_key_Files and find your file\n"
-                              "Send it any where with key file\n"
-                              "For decoding file, go-to encryption-decryption menu and\n"
-                              " select 4 then select encrypted file and key file")
-                        sg.Popup('Your Key and Encrypted File is On ', '"Your_data"', ' Folder')
-                        input("Press Enter: ")
-                        real_python()
-                    except WindowsError:
-                        print("File Does not exist, plz try again")
-                        file_encyption()
-
-                file_encyption()
-
-            if input_user_method == 3:
-                def string_decryption():
-                    try:
-                        input_user_encrypted_string = input("Enter Your Encrypted String: ")
-                        decoded = base64.b64decode(input_user_encrypted_string)
-                        print(decoded)
-                        abcd2 = str(decoded, 'utf-8')
-                        abc2 = abcd2.strip("'")
-                        print(abc2)
-                        sg.popup("Secret message is: ", abc2)
-                        input("Press Enter: ")
-                        real_python()
-                    except UnicodeDecodeError:
-                        print("Entered string is in correct, plz try again")
-                        string_decryption()
-
-                string_decryption()
-
-            if input_user_method == 4:
-                def file_decryption():
-                    print(Fore.RED + "If You got any error, then this mean: \n"
-                                     "1 - Your encrpted text is not encrypted by Real_Python or he is not encrypted or \n"
-                                     "2 - Your Key is Invalid")
-                    input_location_file2 = input("Enter Encrypted File location: ")
-                    input_location2 = input("Enter full location of keyfile : ")
-                    try:
-                        with open(input_location2, 'rb') as mykey2:
-                            key2 = mykey2.read()
-                        fernet = Fernet(key2)
-                        with open(input_location_file2, 'rb') as enc_file:
-                            encrypted = enc_file.read()
-                        decrypted = fernet.decrypt(encrypted)
-                        with open(input_location_file2, 'wb') as dec_file:
-                            dec_file.write(decrypted)
-                        print("File Decrypted Success FUll")
-                        sg.Popup('Your Decrypted File is On ', '"Your_data"', ' Folder')
-                        print("go-to your data Folder and file your decrypted file")
-                        input("press Enter: ")
-                        real_python()
-                    except WindowsError:
-                        print("Something Went Wrong\n"
-                              "1 - Wrong Encrypted file location\n"
-                              "2 - Wrong YourKey.key Location \n"
-                              "PLZ TRY AGAIN WITH WRIGHT THINGS")
-                        file_decryption()
-
-                file_decryption()
 
         def tell_age():
             try:
@@ -2220,14 +2072,14 @@ def real_python():
                     print("\nYour exact age is: ", age_year, "Years", age_month, "months ", age_day, "days", age_hour,
                           "hour", age_min, "minute and ", age_sec, "second\n")
                     threading.Thread(target=press_enter_exit).start()
-                    clear()
+                    clear1()
             except ValueError:
                 print("Error: input correct numbers ")
                 tell_age()
             while value_dat == 0:
                 threading.Thread(target=for_current_time).start()
                 time.sleep(1)
-                clear()
+                clear1()
 
         input_user = input("Input: ")
         if input_user == "1":
@@ -2245,32 +2097,26 @@ def real_python():
                 real_python()
         if input_user == "4":
             contact()
-            play_games()
-        if input_user == "5":
-            contact()
             if check_internet() == True:
                 create_qr()
             else:
                 print(Fore.RED + "Poor internet connection detected")
-        if input_user == "6":
+        if input_user == "5":
             contact()
             open_aplication()
-        if input_user == "7":
+        if input_user == "6":
             contact()
             if check_internet() == True:
                 install_Module()
             else:
                 print(Fore.RED + "Poor internet connection detected")
-        if input_user == "8":
+        if input_user == "7":
             contact()
             if check_internet() == True:
                 install_some()
             else:
                 print(Fore.RED + "Poor internet connection detected")
-        if input_user == "9":
-            contact()
-            encryption()
-        if input_user == "10":
+        if input_user == "8":
             contact()
             tell_age()
         if input_user == "y" or input_user == "Y":
