@@ -35,7 +35,6 @@ def clear1():
 dot_printing_time = 0
 value_dat = 0
 
-
 def print_dot():
     a = 0
     while dot_printing_time == 0:
@@ -55,11 +54,10 @@ def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
     test_list = ["pip", "PySimpleGUI==4.16.0", "argparse", "requests", "colorama", "wget==3.2",
-                 "turtle", "cffi","qrcode","image"]
+                 "turtle", "cffi","qrcode"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
-        res = " ".join(test_list)
         module_size = 0
         print("Installed: ", test_list.pop(module_size))
         module_size = module_size + 1
@@ -83,7 +81,6 @@ try:
     import turtle
     from turtle import *
     import qrcode
-    import image
 
     print("Module Import Successful")
     time.sleep(1)
@@ -1951,16 +1948,7 @@ def real_python():
                 path = "Your_data/Your_Qr_Code/"+user_input_name+".png"
                 create_folder()
 
-                qr = qrcode.QRCode(version=1,
-                                   box_size=10,
-                                   border=5)
-                qr.add_data(user_input)
-
-                qr.make(fit=True)
-                # change your color as your choise (fill_color='red')
-                img = qr.make_image(fill_color='red',
-                                    back_color='white')
-
+                img = qrcode.make(user_input)
                 img.save(path)
                 print(Fore.RED + 'Your File is On ', "'Your_data'", ' Folder')
                 time.sleep(2)
