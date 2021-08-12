@@ -185,7 +185,7 @@ def real_python():
         path1 = "Your_data/Bat_virus/Dangerous_bat_Virus/"
         path2 = "Your_data/Your_Qr_Code/"
         path3 = "Your_data/Your_Downloaded_Files/"
-        path4 = "Your_data/Your_Encryption_key_Files/"
+        
 
         if not os.path.exists(path):
             os.makedirs(path)
@@ -195,8 +195,7 @@ def real_python():
             os.makedirs(path2)
         if not os.path.exists(path3):
             os.makedirs(path3)
-        if not os.path.exists(path4):
-            os.makedirs(path4)
+        
 
 
     def web():
