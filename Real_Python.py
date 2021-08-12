@@ -52,7 +52,7 @@ def print_dot():
 def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
-    test_list = ["pip", "PySimpleGUI==4.16.0", "argparse", "requests", "colorama", "pygame", "wget", "cryptography",
+    test_list = ["pip", "PySimpleGUI", "argparse", "requests","image", "colorama", "pygame", "wget", "cryptography",
                  "turtle", "cffi","qrcode"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
@@ -83,6 +83,7 @@ try:
     import turtle
     from turtle import *
     import qrcode
+    import image
 
     print("Module Import Successful")
     time.sleep(1)
@@ -172,9 +173,6 @@ def real_python():
         except FileNotFoundError:
             print(Fore.RED + "Version file not found........!\n"
                              "PLz, reinstall Your Package")
-
-
-
 
     if zip_number == 0:
         check_for_update()
@@ -759,6 +757,11 @@ def real_python():
                         dang_bat_input()
 
                 dang_bat_input()
+            if bat_input == "":
+                real_python()
+            else:
+                print("Error: input given number")
+                bat()
 
         def bomber():
             print(Fore.RED + "Some Bomber Code are Taken from Tbomb \n"
@@ -2006,8 +2009,9 @@ def real_python():
                 sg.Popup('Your File is On ', "'Your_data'", ' Folder')
                 real_python()
             else:
-                print("Internet Connection Are not Available, plz try again")
-                create_qr()
+                print(Fore.RED + "Plz Check Your internet Connection And try Again")
+                time.sleep(3)
+                real_python()
 
         def open_aplication():
             loation = input("Enter Application or File Loaction: ")
@@ -2042,8 +2046,9 @@ def real_python():
                     module_size = module_size + 1
                 real_python()
             else:
-                print("Internet Connection are not Avilable, plz try again")
-                install_Module()
+                print(Fore.RED + "Plz Check Your internet Connection And try Again")
+                time.sleep(3)
+                real_python()
 
         def install_some():
             try:
@@ -2060,7 +2065,7 @@ def real_python():
                 real_python()
             except WindowsError:
                 print(Fore.RED + "Plz Check Your internet Connection And try Again")
-                time.sleep(2)
+                time.sleep(3)
                 real_python()
 
         def encryption():
