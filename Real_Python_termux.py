@@ -56,7 +56,7 @@ def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
     test_list = ["pip", "PySimpleGUI==4.16.0", "argparse", "requests", "colorama", "wget==3.2",
-                 "turtle", "cffi","qrcode"]
+                 "turtle", "cffi","qrcode","image"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
@@ -84,6 +84,7 @@ try:
     import turtle
     from turtle import *
     import qrcode
+    import image
 
     print("Module Import Successful")
     time.sleep(1)
@@ -173,10 +174,6 @@ def real_python():
         except FileNotFoundError:
             print(Fore.RED + "Version file not found........!\n"
                              "PLz, reinstall Your Package")
-
-
-
-
     if zip_number == 0:
         check_for_update()
     else:
@@ -197,12 +194,8 @@ def real_python():
             os.makedirs(path2)
         if not os.path.exists(path3):
             os.makedirs(path3)
-
-
-
     def web():
         webbrowser.open_new('http://form.craftbook.xyz')
-
     def check_internet():
         try:
             requests.get("https://google.com")
@@ -214,14 +207,12 @@ def real_python():
     time.sleep(2)
     print(Fore.GREEN + "1 For Launch Calculator. \n"
                        "2 For Funny And Dangerous .bat and .vbs Virus.\n"
-                       "3 For Launch Bomber(SMS,CALL,MAIL).\n"
-                       "4 For Play Games.\n"
-                       "5 For Convert url or secret text in QrCode.\n"
-                       "6 For Open Any application or file by it's Location.\n"
-                       "7 For install Many Python Module at One Time By Only it's Name.\n"
-                       "8 For Downloading File or Video Or Anything.\n"
-                       "9 For Encrypting Files and texts.\n"
-                       "10 For Know How old You are.\n" +
+                       "3 For Launch Bomber(SMS,CALL,MAIL).\n"                       
+                       "4 For Convert url or secret text in QrCode.\n"
+                       "5 For Open Any application or file by it's Location.\n"
+                       "6 For install Many Python Module at One Time By Only it's Name.\n"
+                       "7 For Downloading File or Video Or Anything.\n"                       
+                       "8 For Know How old You are.\n" +
           Fore.RED + "Press y to Fill Form for New Feature or Contact or Give us Suggestion")
 
     def full():
@@ -772,6 +763,11 @@ def real_python():
                         dang_bat_input()
 
                 dang_bat_input()
+            if bat_input == "":
+                real_python()
+            else:
+                print("Error: input given number")
+                bat()
 
         def bomber():
             print(Fore.RED + "Some Bomber Code are Taken from Tbomb \n"
@@ -1949,7 +1945,6 @@ def real_python():
                         real_python()
                 real_python()
 
-
         def create_qr():
             if (check_internet()) == True:
                 user_input = input("Enter Url or Secret Text: ")
@@ -1972,8 +1967,9 @@ def real_python():
                 time.sleep(2)
                 real_python()
             else:
-                print("Internet Connection Are not Available, plz try again")
-                create_qr()
+                print(Fore.RED + "Plz Check Your internet Connection And try Again")
+                time.sleep(3)
+                real_python()
 
         def open_aplication():
             loation = input("Enter Application or File Loaction: ")
@@ -1984,7 +1980,7 @@ def real_python():
                 try:
                     quantity = input("How Many Module you want to Install: ")
                     quantity = int(quantity)
-                except ValueError:
+                except :
                     print("Error: PLz Input Correct Number")
                     install_Module()
                 test_list = ["pip"]
@@ -2008,8 +2004,9 @@ def real_python():
                     module_size = module_size + 1
                 real_python()
             else:
-                print("Internet Connection are not Avilable, plz try again")
-                install_Module()
+                print(Fore.RED + "Plz Check Your internet Connection And try Again")
+                time.sleep(3)
+                real_python()
 
         def install_some():
             try:
@@ -2026,7 +2023,7 @@ def real_python():
                 real_python()
             except :
                 print(Fore.RED + "Plz Check Your internet Connection And try Again")
-                time.sleep(2)
+                time.sleep(3)
                 real_python()
 
         def tell_age():
@@ -2099,29 +2096,28 @@ def real_python():
             else:
                 print(Fore.RED + "Poor internet connection detected")
                 real_python()
-        if input_user == "5":
+        if input_user == "4":
             contact()
             if check_internet() == True:
                 create_qr()
             else:
                 print(Fore.RED + "Poor internet connection detected")
-        if input_user == "6":
+        if input_user == "5":
             contact()
             open_aplication()
-        if input_user == "7":
+        if input_user == "6":
             contact()
             if check_internet() == True:
                 install_Module()
             else:
                 print(Fore.RED + "Poor internet connection detected")
-        if input_user == "8":
+        if input_user == "7":
             contact()
             if check_internet() == True:
                 install_some()
             else:
                 print(Fore.RED + "Poor internet connection detected")
-
-        if input_user == "10":
+        if input_user == "8":
             contact()
             tell_age()
         if input_user == "y" or input_user == "Y":
