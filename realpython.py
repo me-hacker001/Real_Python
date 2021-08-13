@@ -93,13 +93,13 @@ except ModuleNotFoundError:
 
 
 def contact():
-    print(Fore.YELLOW + "Primary Email: xcoder.info@gmail.com\n"
+    print(Fore.YELLOW + "Primary Email: help.infutureworld@gmail.com\n"
                         "Secondary Email: info.realpython@gmail.com\n"
                         "Website for contacting us: https://form.craftbook.xyz\n"
                         "YouTube: In_Future_World and Craft Book\n"
                         "Instagram: In_Future_World\n"
                         "Twitter: In_Future_World\n"
-                        "GitHub: code-with-Xcoder\n")
+                        "GitHub: in-future-world\n")
 
 
 answer = 0
@@ -136,7 +136,7 @@ def real_python():
                               "Press enter to continue")
             update_com = input("Enter choise: ")
             if update_com == "y" or update_com == "Y":
-                webbrowser.open_new('https://github.com/code-with-Xcoder/Real_Python.git')
+                webbrowser.open_new('https://github.com/in-future-world/Real_Python.git')
                 clear()
                 banner()
                 sys.exit()
@@ -150,7 +150,7 @@ def real_python():
         try:
             read_file = io.open(".version", "r", encoding="utf-8")
             read_text = read_file.read()
-            url = "https://github.com/code-with-Xcoder/Real_Python/raw/master/.version"
+            url = "https://github.com/in-future-world/Real_Python/raw/master/.version"
             file = urllib.request.urlopen(url)
             for line in file:
                 decoded_line = line.decode("utf-8")
@@ -1012,7 +1012,7 @@ def real_python():
                 global false
                 {
                     "contributors": [
-                        "Xcoder",
+                        "in-future-world",
                         "Prant Keshari",
                         "Real_Python"
                     ],
@@ -1747,7 +1747,7 @@ def real_python():
                 mesgdcrt.GeneralMessage("Failed       : " + str(failed))
                 mesgdcrt.WarningMessage(
                     "This tool was made for fun and research purposes only")
-                mesgdcrt.SuccessMessage("Bomber was created by Xcoder")
+                mesgdcrt.SuccessMessage("Bomber was created by in-future-world")
                 contact()
 
             def workernode(mode, cc, target, count, delay, max_threads):
@@ -1866,7 +1866,7 @@ def real_python():
                 real_python()
 
             __VERSION__ = get_version()
-            __CONTRIBUTORS__ = ['Xcoder', 'SpeedX', '']
+            __CONTRIBUTORS__ = ['in-future-world', 'Prant Keshari', '']
 
             ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
                           Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
@@ -1884,7 +1884,7 @@ def real_python():
             """
 
             parser = argparse.ArgumentParser(description=description,
-                                             epilog='Coded by Xcoder !!!')
+                                             epilog='Coded by in-future-world !!!')
             parser.add_argument("-sms", "--sms", action="store_true",
                                 help="start Bomber with SMS Bomb mode")
             parser.add_argument("-call", "--call", action="store_true",
@@ -2228,6 +2228,7 @@ def real_python():
                 threading.Thread(target=for_current_time).start()
                 time.sleep(1)
                 clear()
+                real_python()
 
         input_user = input("Input: ")
         if input_user == "1":
@@ -2285,4 +2286,4 @@ def real_python():
 
 real_python()
 
-# Xcoder
+# in-future-world
