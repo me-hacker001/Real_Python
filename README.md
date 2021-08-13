@@ -107,7 +107,7 @@ cd Real_Python
 python realpython.py
 ```
 ## **_Or download it as zip and run manually Real_Python.py_**
-You can also download Real_Python as zip and manually run Real_Python.py on suitable software <br />
+You can also download Real_Python as zip and manually run Real_Python.py on suitable software(Pycharm, python idle etc...) <br />
 click here for download - [Real_Python](https://github.com/in-future-world/Real_Python/archive/refs/heads/master.zip)
 
 # Contact us
