@@ -2200,7 +2200,7 @@ def real_python():
                     global value_dat
                     press_me = input("Press enter to exit: ")
                     value_dat = 1
-                    real_python()
+
 
                 def for_current_time():
                     todays_date = date.today()
@@ -2219,16 +2219,16 @@ def real_python():
                     age_sec = abs(current_sec - birth_sec)
                     print("\nYour exact age is: ", age_year, "Years", age_month, "months ", age_day, "days", age_hour,
                           "hour", age_min, "minute and ", age_sec, "second\n")
-                    threading.Thread(target=press_enter_exit).start()
-                    clear1()
+
             except ValueError:
                 print("Error: input correct numbers ")
                 tell_age()
             while value_dat == 0:
                 threading.Thread(target=for_current_time).start()
+                threading.Thread(target=press_enter_exit).start()
                 time.sleep(1)
                 clear1()
-                real_python()
+            real_python()
 
         input_user = input("Input: ")
         if input_user == "1":
