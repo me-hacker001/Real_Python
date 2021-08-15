@@ -93,9 +93,9 @@ except ModuleNotFoundError:
 
 
 def contact():
-    print(Fore.YELLOW + "Primary Email: help.infutureworld@gmail.com\n"
-                        "Secondary Email: info.realpython@gmail.com\n"
-                        "Website for contacting us: https://form.craftbook.xyz\n"
+    print(Fore.YELLOW + "Primary Email: info@infutureworld.xyz\n"
+                        "Secondary Email: help.infutureworld@gmail.com\n"
+                        "Website for contacting us: https://www.infutureworld.xyz/contact-us\n"
                         "YouTube: In_Future_World and Craft Book\n"
                         "Instagram: In_Future_World\n"
                         "Twitter: In_Future_World\n"
@@ -198,8 +198,8 @@ def real_python():
             os.makedirs(path4)
 
 
-    def web():
-        webbrowser.open_new('http://form.craftbook.xyz')
+    def webb():
+        webbrowser.open_new('https://www.infutureworld.xyz/contact-us')
 
     def check_internet():
         try:
@@ -287,7 +287,7 @@ def real_python():
                     help()
                     all()
                 if user_input == "y" or user_input == "Y":
-                    web()
+                    webb()
                     all()
                 else:
                     try:
@@ -312,7 +312,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -333,7 +333,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -354,7 +354,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -375,7 +375,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -397,7 +397,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -419,7 +419,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -441,7 +441,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -2275,7 +2275,7 @@ def real_python():
             contact()
             tell_age()
         if input_user == "y" or input_user == "Y":
-            web()
+            webb()
             real_python()
         else:
             print(Fore.RED + "Error: Input Only Given Numbers")
