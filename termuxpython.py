@@ -22,6 +22,7 @@ import io
 import urllib
 
 
+
 def clear1():
     try:
         if name == 'nt':
@@ -54,7 +55,7 @@ def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
     test_list = ["pip", "PySimpleGUI==4.16.0", "argparse", "requests", "colorama", "wget==3.2",
-                 "turtle", "cffi","qrcode"]
+                 "turtle", "cffi","qrcode","rsa","cryptocode"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
@@ -81,6 +82,7 @@ try:
     import turtle
     from turtle import *
     import qrcode
+    import cryptocode
 
     print("Module Import Successful")
     time.sleep(1)
@@ -90,13 +92,13 @@ except ModuleNotFoundError:
 
 
 def contact():
-    print(Fore.YELLOW + "Primary Email: xcoder.info@gmail.com\n"
-                        "Secondary Email: info.realpython@gmail.com\n"
-                        "Website for contacting us: https://form.craftbook.xyz\n"
+    print(Fore.YELLOW + "Primary Email: info@infutureworld.xyz\n"
+                        "Secondary Email: help.infutureworld@gmail.com\n"
+                        "Website for contacting us: https://www.infutureworld.xyz/contact-us\n"
                         "YouTube: In_Future_World and Craft Book\n"
                         "Instagram: In_Future_World\n"
                         "Twitter: In_Future_World\n"
-                        "GitHub: code-with-Xcoder\n")
+                        "GitHub: in-future-world\n")
 
 
 answer = 0
@@ -133,7 +135,7 @@ def real_python():
                               "Press enter to continue")
             update_com = input("Enter choise: ")
             if update_com == "y" or update_com == "Y":
-                os.system('termux-open-url https://github.com/code-with-Xcoder/Real_Python.git')
+                os.system('termux-open-url https://github.com/in-future-world/Real_Python.git')
                 clear1()
                 banner()
                 sys.exit()
@@ -147,7 +149,7 @@ def real_python():
         try:
             read_file = io.open(".version", "r", encoding="utf-8")
             read_text = read_file.read()
-            url = "https://github.com/code-with-Xcoder/Real_Python/raw/master/.version"
+            url = "https://github.com/in-future-world/Real_Python/raw/master/.version"
             file = urllib.request.urlopen(url)
             for line in file:
                 decoded_line = line.decode("utf-8")
@@ -190,8 +192,8 @@ def real_python():
             os.makedirs(path2)
         if not os.path.exists(path3):
             os.makedirs(path3)
-    def web():
-        os.system('termux-open-url http://form.craftbook.xyz')
+    def webb():
+        os.system('termux-open-url https://www.infutureworld.xyz/contact-us')
     def check_internet():
         try:
             requests.get("https://google.com")
@@ -207,8 +209,9 @@ def real_python():
                        "4 For Convert url or secret text in QrCode.\n"
                        "5 For Open Any application or file by it's Location.\n"
                        "6 For install Many Python Module at One Time By Only it's Name.\n"
-                       "7 For Downloading File or Video Or Anything.\n"                       
-                       "8 For Know How old You are.\n" +
+                       "7 For Downloading File or Video Or Anything.\n"
+                       "8 For Encrypting Files and texts.\n"            
+                       "9 For Know How old You are.\n" +
           Fore.RED + "Press y to Fill Form for New Feature or Contact or Give us Suggestion")
 
     def full():
@@ -276,7 +279,7 @@ def real_python():
                     help()
                     all()
                 if user_input == "y" or user_input == "Y":
-                    web()
+                    webb()
                     all()
                 else:
                     try:
@@ -301,7 +304,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -311,6 +314,7 @@ def real_python():
                                             add()
                                         addition(user_input)
                                         list_1.append("+"), list_1.append(user_input)
+
                                         print(answer)
                                         sign()
 
@@ -322,7 +326,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -343,7 +347,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -364,7 +368,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -386,7 +390,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -408,7 +412,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -430,7 +434,7 @@ def real_python():
                                         help()
                                         sign()
                                     if user_input == "y" or user_input == "Y":
-                                        web()
+                                        webb()
                                         sign()
                                     else:
                                         try:
@@ -1014,7 +1018,7 @@ def real_python():
                 global false
                 {
                     "contributors": [
-                        "Xcoder",
+                        "in-future-world",
                         "Prant Keshari",
                         "Real_Python"
                     ],
@@ -1749,7 +1753,7 @@ def real_python():
                 mesgdcrt.GeneralMessage("Failed       : " + str(failed))
                 mesgdcrt.WarningMessage(
                     "This tool was made for fun and research purposes only")
-                mesgdcrt.SuccessMessage("Bomber was created by Xcoder")
+                mesgdcrt.SuccessMessage("Bomber was created by in-future-world")
                 contact()
 
             def workernode(mode, cc, target, count, delay, max_threads):
@@ -1868,7 +1872,7 @@ def real_python():
                 real_python()
 
             __VERSION__ = get_version()
-            __CONTRIBUTORS__ = ['Xcoder', 'SpeedX', '']
+            __CONTRIBUTORS__ = ['in-future-world', 'Prant Keshari', '']
 
             ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
                           Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
@@ -1886,7 +1890,7 @@ def real_python():
             """
 
             parser = argparse.ArgumentParser(description=description,
-                                             epilog='Coded by Xcoder !!!')
+                                             epilog='Coded by in-future-world !!!')
             parser.add_argument("-sms", "--sms", action="store_true",
                                 help="start Bomber with SMS Bomb mode")
             parser.add_argument("-call", "--call", action="store_true",
@@ -2013,6 +2017,52 @@ def real_python():
                 time.sleep(3)
                 real_python()
 
+        def encrypt_decrypt():
+            print("1 For Sending Secret Message (Encrypt String). \n"                  
+                  "2 For Decoding Message (Decrypt String).\n")
+            try:
+                input_user_method1 = int(input("Enter Your Choise: "))
+            except ValueError:
+                print(Fore.RED+"Error: Enter Valid Number")
+                encrypt_decrypt()
+            if input_user_method1 == 1:
+                def encrypt_text():
+                    text_input = input("Enter Secret message: ")
+                    pass_input = input("Enter Password: ")
+                    str_encoded = cryptocode.encrypt(text_input, pass_input)
+                    print("Password: ", Fore.RED + pass_input)
+                    print(Fore.YELLOW + "Copy this line and send it any where: ")
+                    print(Fore.RED + str_encoded)
+                    input("Press enter: ")
+                    real_python()
+
+                encrypt_text()
+            if input_user_method1 == 2:
+                def decrypt_text():
+                    str_encoded1 = input(Fore.YELLOW + "Enter encrypted string: ")
+                    str_password = input("Enter password: ")
+                    try:
+                        str_decoded = cryptocode.decrypt(str_encoded1, str_password)
+                        if str_decoded == False:
+                            print(Fore.RED + "Error: Password or string is not correct")
+                            decrypt_text()
+                        else:
+                            print(Fore.RED + str_decoded)
+                            input("Press enter: ")
+                            real_python()
+                    except:
+                        print(Fore.RED + "Something went wrong, plz try again")
+                        decrypt_text()
+                decrypt_text()
+            else:
+                print(Fore.RED+"Error: input only given number")
+                encrypt_decrypt()
+
+
+
+
+
+
         def tell_age():
             try:
 
@@ -2040,7 +2090,7 @@ def real_python():
                     global value_dat
                     press_me = input("Press enter to exit: ")
                     value_dat = 1
-                    real_python()
+
 
                 def for_current_time():
                     todays_date = date.today()
@@ -2059,15 +2109,19 @@ def real_python():
                     age_sec = abs(current_sec - birth_sec)
                     print("\nYour exact age is: ", age_year, "Years", age_month, "months ", age_day, "days", age_hour,
                           "hour", age_min, "minute and ", age_sec, "second\n")
-                    threading.Thread(target=press_enter_exit).start()
-                    clear1()
             except ValueError:
                 print("Error: input correct numbers ")
                 tell_age()
-            while value_dat == 0:
-                threading.Thread(target=for_current_time).start()
+            clock_time = 30
+            for nan in range (clock_time):
+                print("Clock will stop in: ", clock_time, "sec")
+                clock_time -= 1
+                for_current_time()
                 time.sleep(1)
+
+
                 clear1()
+            real_python()
 
         input_user = input("Input: ")
         if input_user == "1":
@@ -2106,9 +2160,13 @@ def real_python():
                 print(Fore.RED + "Poor internet connection detected")
         if input_user == "8":
             contact()
+            encrypt_decrypt()
+
+        if input_user == "9":
+            contact()
             tell_age()
         if input_user == "y" or input_user == "Y":
-            web()
+            webb()
             real_python()
         else:
             print(Fore.RED + "Error: Input Only Given Numbers")
@@ -2119,4 +2177,4 @@ def real_python():
 
 real_python()
 
-# Xcoder
+# in-future-world
