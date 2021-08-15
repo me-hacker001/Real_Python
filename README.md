@@ -63,49 +63,6 @@ cd Real_Python
 python termuxpython.py
 ```
 
-#### For Debian-based:
-Commands for Debian-based terminal.
-```shell script
-sudo apt install git
-git clone https://github.com/in-future-world/Real_Python.git
-cd Real_Python
-python realpython.py
-```
-
-#### For MacOS:
-Commands for MacOS terminal.
-```shell script
-brew install git
-brew install python3
-sudo easy_install pip
-sudo pip install --upgrade pip
-git clone https://github.com/in-future-world/Real_Python.git
-cd Real_Python
-python realpython.py
-```
-
-#### For Window CMD:
-Commands for Window cmd.
-```shell script
-pip install GitPython
-git clone https://github.com/in-future-world/Real_Python.git
-cd Real_Python
-python realpython.py
-```
-
-#### For iSH:
-
-Commands for iSH.
-```shell script
-apk add git
-apk add python3
-apk add py3-pip
-apk add ruby
-gem install toilet
-git clone https://github.com/in-future-world/Real_Python.git
-cd Real_Python
-python realpython.py
-```
 ## **_Or download it as zip and run manually Real_Python.py_**
 You can also download Real_Python as zip and manually run Real_Python.py on suitable software(Pycharm, python idle etc...) <br />
 click here for download - [Real_Python](https://github.com/in-future-world/Real_Python/archive/refs/heads/master.zip)
