@@ -55,7 +55,7 @@ def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
     test_list = ["pip", "PySimpleGUI", "argparse", "requests","image", "colorama", "pygame", "wget", "cryptography",
-                 "turtle", "cffi","qrcode"]
+                 "turtle", "cffi","qrcode","cryptocode"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
@@ -86,6 +86,7 @@ try:
     from turtle import *
     import qrcode
     import image
+    import cryptocode
 
     print("Module Import Successful")
     time.sleep(1)
