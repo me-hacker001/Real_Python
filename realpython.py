@@ -2,6 +2,8 @@ import time
 from os import system, name
 import os
 import sys
+
+import cryptocode
 import pip
 import threading
 import webbrowser  #
@@ -2079,16 +2081,16 @@ def real_python():
                 print("Error: Enter Valid Number")
                 encryption()
             if input_user_method == 1:
-                input_user_string = input("Enter Your Secret Message: ")
-                password = input_user_string.encode("utf-8")
-                encoded = base64.b64encode(password)
-                abcd = str(encoded, 'utf-8')
-                abc = abcd.strip("'")
-                print(Fore.RED + "This is your secret message: ", abc)
-                print("Copy text and send it anywhere\n"
-                      "for decoding text, go to encryption-decryption menu and select 3 number and paste it")
-                input("Press Enter to continue: ")
-                real_python()
+                def encrypt_text():
+                    text_input = input("Enter Secret message: ")
+                    pass_input = input("Enter Password: ")
+                    str_encoded = cryptocode.encrypt(text_input, pass_input)
+                    print("Password: ", Fore.RED + pass_input)
+                    print(Fore.YELLOW + "Copy this line and send it any where: ")
+                    print(Fore.RED + str_encoded)
+                    input("Press enter: ")
+                    real_python()
+                encrypt_text()
 
             if input_user_method == 2:
                 def file_encyption():
@@ -2126,22 +2128,22 @@ def real_python():
                 file_encyption()
 
             if input_user_method == 3:
-                def string_decryption():
+                def decrypt_text():
+                    str_encoded1 = input(Fore.YELLOW + "Enter encrypted string: ")
+                    str_password = input("Enter password: ")
                     try:
-                        input_user_encrypted_string = input("Enter Your Encrypted String: ")
-                        decoded = base64.b64decode(input_user_encrypted_string)
-                        print(decoded)
-                        abcd2 = str(decoded, 'utf-8')
-                        abc2 = abcd2.strip("'")
-                        print(abc2)
-                        sg.popup("Secret message is: ", abc2)
-                        input("Press Enter: ")
-                        real_python()
-                    except UnicodeDecodeError:
-                        print("Entered string is in correct, plz try again")
-                        string_decryption()
-
-                string_decryption()
+                        str_decoded = cryptocode.decrypt(str_encoded1, str_password)
+                        if str_decoded == False:
+                            print(Fore.RED + "Error: Password or string is not correct")
+                            decrypt_text()
+                        else:
+                            print(Fore.RED + str_decoded)
+                            input("Press enter: ")
+                            real_python()
+                    except:
+                        print(Fore.RED + "Something went wrong, plz try again")
+                        decrypt_text()
+                decrypt_text()
 
             if input_user_method == 4:
                 def file_decryption():
@@ -2172,6 +2174,10 @@ def real_python():
                         file_decryption()
 
                 file_decryption()
+
+            else:
+                print(Fore.RED+"Error: input only given number")
+                encryption()
 
         def tell_age():
             try:
