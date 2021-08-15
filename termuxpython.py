@@ -55,7 +55,7 @@ def retry():
     threading.Thread(target=print_dot).start()
     global dot_printing_time
     test_list = ["pip", "PySimpleGUI==4.16.0", "argparse", "requests", "colorama", "wget==3.2",
-                 "turtle", "cffi","qrcode"]
+                 "turtle", "cffi","qrcode","rsa","cryptocode"]
     number_of_module = len(test_list)
     for a in range(number_of_module):
         pip.main(['install'] + test_list + ['--upgrade'])
@@ -82,6 +82,7 @@ try:
     import turtle
     from turtle import *
     import qrcode
+    import cryptocode
 
     print("Module Import Successful")
     time.sleep(1)
@@ -208,8 +209,9 @@ def real_python():
                        "4 For Convert url or secret text in QrCode.\n"
                        "5 For Open Any application or file by it's Location.\n"
                        "6 For install Many Python Module at One Time By Only it's Name.\n"
-                       "7 For Downloading File or Video Or Anything.\n"                       
-                       "8 For Know How old You are.\n" +
+                       "7 For Downloading File or Video Or Anything.\n"
+                       "8 For Encrypting Files and texts.\n"            
+                       "9 For Know How old You are.\n" +
           Fore.RED + "Press y to Fill Form for New Feature or Contact or Give us Suggestion")
 
     def full():
@@ -2015,6 +2017,52 @@ def real_python():
                 time.sleep(3)
                 real_python()
 
+        def encrypt_decrypt():
+            print("1 For Sending Secret Message (Encrypt String). \n"                  
+                  "2 For Decoding Message (Decrypt String).\n")
+            try:
+                input_user_method1 = int(input("Enter Your Choise: "))
+            except ValueError:
+                print(Fore.RED+"Error: Enter Valid Number")
+                encrypt_decrypt()
+            if input_user_method1 == 1:
+                def encrypt_text():
+                    text_input = input("Enter Secret message: ")
+                    pass_input = input("Enter Password: ")
+                    str_encoded = cryptocode.encrypt(text_input, pass_input)
+                    print("Password: ", Fore.RED + pass_input)
+                    print(Fore.YELLOW + "Copy this line and send it any where: ")
+                    print(Fore.RED + str_encoded)
+                    input("Press enter: ")
+                    real_python()
+
+                encrypt_text()
+            if input_user_method1 == 2:
+                def decrypt_text():
+                    str_encoded1 = input(Fore.YELLOW + "Enter encrypted string: ")
+                    str_password = input("Enter password: ")
+                    try:
+                        str_decoded = cryptocode.decrypt(str_encoded1, str_password)
+                        if str_decoded == False:
+                            print(Fore.RED + "Error: Password or string is not correct")
+                            decrypt_text()
+                        else:
+                            print(Fore.RED + str_decoded)
+                            input("Press enter: ")
+                            real_python()
+                    except:
+                        print(Fore.RED + "Something went wrong, plz try again")
+                        decrypt_text()
+                decrypt_text()
+            else:
+                print(Fore.RED+"Error: input only given number")
+                encrypt_decrypt()
+
+
+
+
+
+
         def tell_age():
             try:
 
@@ -2111,6 +2159,10 @@ def real_python():
             else:
                 print(Fore.RED + "Poor internet connection detected")
         if input_user == "8":
+            contact()
+            encrypt_decrypt()
+
+        if input_user == "9":
             contact()
             tell_age()
         if input_user == "y" or input_user == "Y":
