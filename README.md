@@ -135,3 +135,8 @@ GitHub: [in-future-world](https://github.com/in-future-world) <br />
 
 
 
+<br>You can find me on <a target="_blank" href="https://twitter.com/in_future_world">
+  <img alt="Instagram" width="22px" src="https://user-images.githubusercontent.com/88558310/129485486-5fbaa4f6-dce2-4a3d-9ad0-de09abaf1afb.png" />
+</a>, or on  <a target="_blank" href="https://www.instagram.com/in_future_world">
+  <img alt="Instagram" width="22px" src="https://user-images.githubusercontent.com/88558310/129485437-411924e1-b7d0-4f28-a8ca-b3886cc98e8c.png" />
+</a>
